@@ -1,0 +1,124 @@
+.todos {
+    min-height: 100vh;
+    transition: 1s;
+    background-image: url("../../images/Tashkent.jpg");
+    background-size: cover;
+}
+
+.todos__white {
+    background-image: url("../../images/Tog.jpg");
+    background-size: cover;
+    
+    
+    
+}
+
+.plus__btn {
+    color: white;
+    transition: 1s; 
+    
+      
+
+}
+.plus__btn:hover {
+    color: white;
+    transition: 1s;
+    background-color: #6b77e0;
+}
+.plus__btn:focus{
+    transform:rotateZ(180deg);
+}
+
+.todo__form {
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+ .input {
+    background-color: transparent; 
+    outline: none;
+    border: none;
+    color: white;
+}
+.input:focus {
+    background-color: transparent;
+    color: white;
+}
+
+.todo__form .input::placeholder {
+    color: gray;
+}
+
+.chek__input[type="checkbox"] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    
+}
+
+.chek__input[type="checkbox"]::before {
+    content: '';
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50% !important;
+    outline: none !important;
+  
+   
+
+}
+
+.todo__content {
+    background-color: #25273E;
+    padding: 20px;
+    color: #9899b8;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.todo__content-white {
+    background-color: #E9EBEC;
+    box-shadow: 0 0 10px rgb(204, 199, 199);
+
+}
+
+.todo__list {
+    padding: 20px 0px;
+    border-bottom: 1px solid #9899b8;
+    
+  
+}
+
+.todo__comp {
+    overflow: hidden;
+    position: relative;
+    width: 127px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.comp {
+    display: flex;
+    position: absolute;
+    top: -120%;
+    left: 0;
+    width: 50%;
+    transition: .5s;
+}
+
+.comp__hide {
+    top: 0 !important;
+    transition: .5s;
+}
+
+.chek__input:checked+.tasks {
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:992px) {
+    .todo__form {
+        width: 100% !important;
+    }
+}
